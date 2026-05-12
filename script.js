@@ -2,9 +2,7 @@
 // Interaktiver Klick-Counter mit Schwellwert-Anzeige
 // Stack: Vanilla JavaScript, DOM-Manipulation
 
-// --- Titel beim Laden ändern ---
-let titel = document.querySelector("h1");
-titel.textContent = "JavaScript hat das geändert!";
+
 
 // --- Klick-Counter ---
 let klicks = 0;
