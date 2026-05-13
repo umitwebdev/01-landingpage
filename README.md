@@ -8,6 +8,7 @@ Interaktive Landingpage mit Klick-Counter, Schwellwert-Anzeige und Like-Toggle.
 - Live-Update der Anzeige bei jedem Klick (DOM-Manipulation ohne Page Reload)
 - Drei Schwellwert-Stufen: 0–9 normal, 10–19 🔥, 20+ 🚀
 - Like-Button mit Toggle-Logik (Instagram-Style: liken / unliken)
+- Dark-Mode-Toggle via `addEventListener` und `classList.toggle`
 - Reset-Funktion für Klicks und Likes
 - Vollständig Vanilla JavaScript, keine Frameworks
 

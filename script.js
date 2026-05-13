@@ -60,3 +60,16 @@ function resetLikes() {
     geliked = false;
     aktualisiereLikeAnzeige();
 }
+
+// --- addEventListener für Like-Button ---
+
+let likeButton = document.querySelector("#like-button");
+likeButton.addEventListener("click", toggleLike);
+
+// --- addEventListener für Dark-Mode-Button ---
+function toggleDarkMode() {
+   document.body.classList.toggle("light");
+}
+
+let darkModeButton = document.querySelector("#dark-mode-button");
+darkModeButton.addEventListener("click", toggleDarkMode);
