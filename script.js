@@ -1,7 +1,6 @@
 // === 01-landingpage ===
-// Interaktiver Klick-Counter mit Schwellwert-Anzeige
+// Interaktiver Klick-Counter mit Schwellwert-Anzeige + Instagram-Like-Toggle
 // Stack: Vanilla JavaScript, DOM-Manipulation
-
 
 
 // --- Klick-Counter ---
@@ -28,7 +27,36 @@ function resetKlicks() {
     aktualisiereAnzeige();
 }
 
+
 // --- Start-Button (Demo-Alert) ---
 function handleClick() {
     alert("Button funktioniert!");
+}
+
+
+// --- Like-Counter (Instagram-Style Toggle) ---
+let likes = 0;
+let geliked = false;
+
+function aktualisiereLikeAnzeige() {
+    let likeAnzeige = document.querySelector("#like-anzeige");
+    likeAnzeige.textContent = "likes: " + likes + " ❤️";
+}
+
+function toggleLike() {
+    if (geliked === false) {
+        likes = likes + 1;
+        geliked = true;
+        aktualisiereLikeAnzeige();
+    } else {
+        likes = likes - 1;
+        geliked = false;
+        aktualisiereLikeAnzeige();
+    }
+}
+
+function resetLikes() {
+    likes = 0;
+    geliked = false;
+    aktualisiereLikeAnzeige();
 }
