@@ -24,3 +24,6 @@ git clone https://github.com/umitwebdev/01-landingpage.git
 cd 01-landingpage
 
 Dann index.html im Browser öffnen oder via Live Server starten.
+
+## Documentation
+[Project Summary (PDF)](./project-summary.pdf)
