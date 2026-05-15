@@ -11,6 +11,7 @@ Interaktive Landingpage mit Klick-Counter, Schwellwert-Anzeige und Like-Toggle.
 - Dark-Mode-Toggle via `addEventListener` und `classList.toggle`
 - Reset-Funktion für Klicks und Likes
 - Vollständig Vanilla JavaScript, keine Frameworks
+- - Alle Buttons über `addEventListener` gebunden (Separation of Concerns)
 
 ## Tech-Stack
 - HTML5

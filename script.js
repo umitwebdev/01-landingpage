@@ -73,3 +73,9 @@ function toggleDarkMode() {
 
 let darkModeButton = document.querySelector("#dark-mode-button");
 darkModeButton.addEventListener("click", toggleDarkMode);
+
+let startButton = document.querySelector("#start-button");
+startButton.addEventListener("click", handleClick);
+
+let resetButton = document.querySelector("#reset-button");
+resetButton.addEventListener("click", resetKlicks);
