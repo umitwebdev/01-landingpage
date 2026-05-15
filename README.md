@@ -26,4 +26,4 @@ cd 01-landingpage
 Dann index.html im Browser öffnen oder via Live Server starten.
 
 ## Documentation
-[Project Summary (PDF)](./project-summary.pdf)
+[Project Summary (PDF)](./01-landingpage-project-summary.pdf)
