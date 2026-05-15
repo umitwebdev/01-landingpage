@@ -6,6 +6,14 @@
 // --- Klick-Counter ---
 let klicks = 0;
 
+let gespeicherterWert = localStorage.getItem("klicks");
+if (gespeicherterWert !== null) {
+    klicks = Number(gespeicherterWert);
+    aktualisiereAnzeige();
+
+}
+
+
 function aktualisiereAnzeige() {
     let anzeige = document.querySelector("#anzeige");
     if (klicks <= 9) {
@@ -20,11 +28,14 @@ function aktualisiereAnzeige() {
 function buttonGeklickt() {
     klicks = klicks + 1;
     aktualisiereAnzeige();
+    localStorage.setItem("klicks", klicks);
+
 }
 
 function resetKlicks() {
     klicks = 0;
     aktualisiereAnzeige();
+    localStorage.setItem("klicks", klicks);
 }
 
 
@@ -79,3 +90,11 @@ startButton.addEventListener("click", handleClick);
 
 let resetButton = document.querySelector("#reset-button");
 resetButton.addEventListener("click", resetKlicks);
+
+let klickButton = document.querySelector("#klick-button");
+klickButton.addEventListener("click", buttonGeklickt);
+
+let resetLike = document.querySelector("#reset-likes");
+resetLike.addEventListener("click", resetLikes);
+
+
